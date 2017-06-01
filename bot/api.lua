@@ -13,7 +13,7 @@ http = require "socket.http"
 https = require "ssl.https"
 -----~~~~~~~~~~~~~~~~
 d = dofile('./libs/redis.lua')
-config_sudo = {280061509,310217440,363936960,366831302,56693692,260604473}
+config_sudo = {122099838}
 function dl_cb(arg, data)
  --vardump(data)
  --vardump(arg)
@@ -125,7 +125,7 @@ end
       end
     end
 
---[[if text == 'panel' and is_sudo(msg) then-------- «Ì‰ »Œ‘ œ— Ê—é‰ »⁄œÌ ›⁄«· „Ì‘Êœ
+--[[if text == 'panel' and is_sudo(msg) then-------- √á√≠√§ √à√é√î √è√ë √¶√ë≈Ω√§ √à√ö√è√≠ √ù√ö√á√° √£√≠√î√¶√è
 function inline(arg,data)
 local cerner = 'CerNer Team'
           tdcli_function({
@@ -202,7 +202,7 @@ if is_sudo(msg) then
         tabchi.sendText(v, 0, 1, text,1, 'md')
           end
   local gps = d:scard("asgp") or 0       
-     text = 'ÅÌ«„ ‘„« »Â : '..gps..'\n«—”«· ‘œ...!'
+     text = '¬Å√≠√á√£ √î√£√á √à√• : '..gps..'\n√á√ë√ì√á√° √î√è...!'
        tabchi.sendText(msg.chat_id_, msg.id_, 1, text, 1, 'html')
           end
           tabchi.getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),cb)
